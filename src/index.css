@@ -1,0 +1,154 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0rem 0.2rem 0.5rem 0rem #0000001a;
+}
+
+.logo {
+  width: 7rem;
+  align-self: center;
+}
+
+.Home {
+  padding-inline: 1.5rem;
+}
+
+.hero-section {
+  padding-top: 1rem;
+}
+
+.hero_image {
+  width: 100%;
+  object-fit: cover;
+  padding: 0rem 2rem 0.9375rem 2rem;
+}
+
+.hero_texts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3.125rem;
+}
+
+.hero_texts > h1 {
+  width: 100%;
+  font-size: 2rem;
+}
+
+.hero_texts > p {
+  padding-right: 8.9em;
+}
+
+.card_lists {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 1.5rem;
+  overflow-x: auto;
+}
+
+.card {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: flex-start;
+  flex: 0 0 auto;
+}
+
+.card > p,
+.card_infos {
+  margin: 0.1875rem 0;
+}
+
+.card_image {
+  width: 100%;
+  max-width: 20rem;
+  height: 22rem;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+}
+
+.badge_text {
+  position: absolute;
+  background-color: white;
+  left: 0.5rem;
+  padding: 0.3rem 0.8rem;
+  top: 0.8rem;
+  border-radius: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.card_infos {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.info_list {
+  padding-inline: 0.35rem;
+  justify-self: center;
+  font-size: 1rem;
+}
+
+.star_icon {
+  width: 0.8rem;
+}
+
+.gray {
+  color: gray;
+}
+
+.price_tag {
+  font-weight: bold;
+}
+
+@media (min-width: 900px) {
+  .Home {
+    padding-inline: 2.5rem;
+  }
+
+  .hero-section {
+    padding-top: 1rem;
+  }
+
+  .hero_image {
+    width: 60%;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+  }
+
+  .hero_texts > h1 {
+    width: 100%;
+    font-size: 5rem;
+  }
+}
+
+/* bo @media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
